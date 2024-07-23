@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jolestar/go-commons-pool/v2/concurrent"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2/concurrent"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

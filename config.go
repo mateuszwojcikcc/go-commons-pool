@@ -40,7 +40,7 @@ const (
 	// DefaultBlockWhenExhausted is the default value of ObjectPoolConfig.BlockWhenExhausted
 	DefaultBlockWhenExhausted = true
 	// DefaultEvictionPolicyName is the default value of ObjectPoolConfig.EvictionPolicyName
-	DefaultEvictionPolicyName = "github.com/jolestar/go-commons-pool/DefaultEvictionPolicy"
+	DefaultEvictionPolicyName = "github.com/mateuszwojcikcc/go-commons-pool/DefaultEvictionPolicy"
 )
 
 // ObjectPoolConfig is ObjectPool config, include cap, block, valid strategy, evict strategy etc.

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jolestar/go-commons-pool/v2/concurrent"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2/concurrent"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )
@@ -503,7 +503,7 @@ func (suit *LinkedBlockDequeTestSuite) TestHasTakeWaiters() {
 	suit.False(suit.deque.HasTakeWaiters())
 }
 
-// https://github.com/jolestar/go-commons-pool/issues/44
+// https://github.com/mateuszwojcikcc/go-commons-pool/issues/44
 func (suit *LinkedBlockDequeTestSuite) TestDeadLock() {
 	ctx := context.Background()
 	suit.deque = NewDeque(1)

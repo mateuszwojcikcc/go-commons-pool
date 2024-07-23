@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jolestar/go-commons-pool/v2/concurrent"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2/concurrent"
 )
 
 type BenchObject struct {

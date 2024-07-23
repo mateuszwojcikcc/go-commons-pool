@@ -1,18 +1,18 @@
 Go Commons Pool
 =====
 
-[![Build Status](https://github.com/jolestar/go-commons-pool/workflows/Build/badge.svg)](https://github.com/jolestar/go-commons-pool/actions)
-[![CodeCov](https://codecov.io/gh/jolestar/go-commons-pool/branch/master/graph/badge.svg)](https://codecov.io/gh/jolestar/go-commons-pool)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jolestar/go-commons-pool)](https://goreportcard.com/report/github.com/jolestar/go-commons-pool)
-[![GoDoc](https://godoc.org/github.com/jolestar/go-commons-pool?status.svg)](https://godoc.org/github.com/jolestar/go-commons-pool)
+[![Build Status](https://github.com/mateuszwojcikcc/go-commons-pool/workflows/Build/badge.svg)](https://github.com/mateuszwojcikcc/go-commons-pool/actions)
+[![CodeCov](https://codecov.io/gh/mateuszwojcikcc/go-commons-pool/branch/master/graph/badge.svg)](https://codecov.io/gh/mateuszwojcikcc/go-commons-pool)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mateuszwojcikcc/go-commons-pool)](https://goreportcard.com/report/github.com/mateuszwojcikcc/go-commons-pool)
+[![GoDoc](https://godoc.org/github.com/mateuszwojcikcc/go-commons-pool?status.svg)](https://godoc.org/github.com/mateuszwojcikcc/go-commons-pool)
 
 The Go Commons Pool is a generic object pool for [Golang](https://golang.org/), direct rewrite from [Apache Commons Pool](https://commons.apache.org/proper/commons-pool/).
 
 Features
 -------
 
-1. Support custom [PooledObjectFactory](https://godoc.org/github.com/jolestar/go-commons-pool#PooledObjectFactory).
-1. Rich pool configuration option, can precise control pooled object lifecycle. See [ObjectPoolConfig](https://godoc.org/github.com/jolestar/go-commons-pool#ObjectPoolConfig).
+1. Support custom [PooledObjectFactory](https://godoc.org/github.com/mateuszwojcikcc/go-commons-pool#PooledObjectFactory).
+1. Rich pool configuration option, can precise control pooled object lifecycle. See [ObjectPoolConfig](https://godoc.org/github.com/mateuszwojcikcc/go-commons-pool#ObjectPoolConfig).
     * Pool LIFO (last in, first out) or FIFO (first in, first out)
     * Pool cap config
     * Pool object validate config
@@ -23,7 +23,7 @@ Features
 Pool Configuration Option
 -------
 
-Configuration option table, more detail description see [ObjectPoolConfig](https://godoc.org/github.com/jolestar/go-commons-pool#ObjectPoolConfig)
+Configuration option table, more detail description see [ObjectPoolConfig](https://godoc.org/github.com/mateuszwojcikcc/go-commons-pool#ObjectPoolConfig)
 
 | Option                        | Default        | Description  |
 | ------------------------------|:--------------:| :------------|
@@ -53,7 +53,7 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/jolestar/go-commons-pool/v2"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2"
 )
 
 func Example_simple() {
@@ -99,7 +99,7 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/jolestar/go-commons-pool/v2"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2"
 )
 
 type MyPoolObject struct {
@@ -214,7 +214,7 @@ For Apache commons pool user
 FAQ
 -------
 
-[FAQ](https://github.com/jolestar/go-commons-pool/wiki/FAQ)
+[FAQ](https://github.com/mateuszwojcikcc/go-commons-pool/wiki/FAQ)
 
 How to contribute
 -------
@@ -229,8 +229,8 @@ How to contribute
 中文文档
 -------
 
-* [Go Commons Pool发布以及Golang多线程编程问题总结](http://jolestar.com/go-commons-pool-and-go-concurrent/)
-* [Go Commons Pool 1.0 发布](http://jolestar.com/go-commons-pool-v1-release/)
+* [Go Commons Pool发布以及Golang多线程编程问题总结](http://mateuszwojcikcc.com/go-commons-pool-and-go-concurrent/)
+* [Go Commons Pool 1.0 发布](http://mateuszwojcikcc.com/go-commons-pool-v1-release/)
 
 License
 -------

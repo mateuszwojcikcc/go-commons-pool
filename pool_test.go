@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/fortytw2/leaktest"
-	"github.com/jolestar/go-commons-pool/v2/collections"
-	"github.com/jolestar/go-commons-pool/v2/concurrent"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2/collections"
+	"github.com/mateuszwojcikcc/go-commons-pool/v2/concurrent"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )
@@ -1248,7 +1248,7 @@ func (p *TestEvictionPolicy) Evict(config *EvictionConfig, underTest *PooledObje
 	return false
 }
 
-var TestEvictionPolicyName = "github.com/jolestar/go-commons-pool/TestEvictionPolicy"
+var TestEvictionPolicyName = "github.com/mateuszwojcikcc/go-commons-pool/TestEvictionPolicy"
 
 func (suit *PoolTestSuite) TestEvictionPolicy() {
 	suit.pool.Config.MaxIdle = 500
@@ -2069,7 +2069,7 @@ func (suit *PoolTestSuite) TestValueFactory() {
 	})
 }
 
-// https://github.com/jolestar/go-commons-pool/issues/44
+// https://github.com/mateuszwojcikcc/go-commons-pool/issues/44
 func (suit *PoolTestSuite) TestDeadLock() {
 	ctx := context.Background()
 	suit.pool.Config.MinIdle = 1

@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"strconv"
 	"sync/atomic"
-
-	"github.com/jolestar/go-commons-pool/v2"
 )
 
 type MyPoolObject struct {

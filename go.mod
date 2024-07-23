@@ -1,4 +1,4 @@
-module github.com/jolestar/go-commons-pool/v2
+module github.com/mateuszwojcikcc/go-commons-pool/v2
 
 go 1.13
 
