@@ -3,6 +3,7 @@ package pool
 import (
 	"context"
 	"errors"
+	"fmt"
 	"math"
 	"sync"
 	"time"
@@ -527,6 +528,7 @@ func (pool *ObjectPool) startEvictor(delay time.Duration) {
 			for {
 				select {
 				case <-pool.evictor.C:
+					fmt.Println("EVICTOR")
 					pool.evict(pool.Config.EvictionContext)
 					pool.ensureMinIdle(pool.Config.EvictionContext)
 				case <-pool.evictorStopChan:
