@@ -3,6 +3,7 @@ package pool
 import (
 	"context"
 	"errors"
+	"fmt"
 	"math"
 	"sync"
 	"time"
@@ -242,6 +243,8 @@ type DefaultEvictionPolicy struct {
 // Evict do evict by config
 func (p *DefaultEvictionPolicy) Evict(config *EvictionConfig, underTest *PooledObject, idleCount int) bool {
 	idleTime := underTest.GetIdleTime()
+
+	fmt.Printf("evict %v %v %v %v\n", idleTime, config.IdleSoftEvictTime, config.MinIdle, config.IdleEvictTime)
 
 	if (config.IdleSoftEvictTime < idleTime &&
 		config.MinIdle < idleCount) ||
