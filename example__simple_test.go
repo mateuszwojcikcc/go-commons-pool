@@ -3,6 +3,7 @@ package pool_test
 import (
 	"context"
 	"fmt"
+	pool "github.com/mateuszwojcikcc/go-commons-pool/v2"
 	"strconv"
 	"sync/atomic"
 )

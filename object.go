@@ -2,6 +2,7 @@ package pool
 
 import (
 	"fmt"
+	"runtime/debug"
 	"sync"
 	"time"
 
@@ -128,6 +129,9 @@ func (o *PooledObject) doDeallocate() bool {
 		o.state == StateReturning {
 		o.state = StateIdle
 		o.LastReturnTime = time.Now()
+
+		debug.PrintStack()
+
 		//borrowedBy = nil;
 		return true
 	}

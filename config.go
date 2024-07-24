@@ -244,7 +244,7 @@ type DefaultEvictionPolicy struct {
 func (p *DefaultEvictionPolicy) Evict(config *EvictionConfig, underTest *PooledObject, idleCount int) bool {
 	idleTime := underTest.GetIdleTime()
 
-	fmt.Printf("evict %v %v %v %v\n", idleTime, config.IdleSoftEvictTime, config.MinIdle, config.IdleEvictTime)
+	fmt.Printf("evict %v %v\n", idleTime, underTest.LastReturnTime)
 
 	if (config.IdleSoftEvictTime < idleTime &&
 		config.MinIdle < idleCount) ||
